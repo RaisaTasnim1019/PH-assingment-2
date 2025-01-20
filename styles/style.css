@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 auto;
+}
+/* Shared Styles*/
+.font-family {
+    font-family: "Fira Sans", serif;
+  }
+.text-primary-color-yellow{
+    color: rgb(254, 163, 1);
+}
+.text-primary-color-blue{
+    color: rgb(1, 172, 253);
+}
+.text-secondary-color-blue{
+    color: rgb(5, 212, 223);
+}
+.text-secondary-color-purple{
+    color: rgb(93, 88, 239);
+}
+.text-black{
+    color: rgb(17, 17, 17);
+}
+.text-grey{
+    color: rgb(128, 128, 128);
+}
+.text-white{
+    color: rgb(255, 255, 255);
+}
+.bg-primary-color-yellow{
+    background-color: rgb(254, 163, 1);
+}
+.bg-primary-color-blue{
+    background-color: rgb(1, 172, 253);
+}
+.bg-secondary-color-green{
+    color:rgb(149, 178, 38);
+}
+.bg-black{
+    background-color: rgb(17, 17, 17);
+}
+.display-flex{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+/* navbar */
+nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.nav-logo{
+    align-items: center;
+    gap: 10px;
+}
+.nav-logo img{
+    width: 100%;
+}
+#nav-tittle{
+    font-size: 30px;
+    font-weight: 700;
+}
+.nav-links{
+    gap: 30px;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-btn{
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    width: 183px;
+    height: 46px;
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+    #nav-tittle,
+    .nav-links,
+    .nav-btn{
+        display: none;
+    }
+    .nav-btn-img{
+        display: block;
+    }
+    header{
+        border-bottom: 2px solid rgb(254, 163, 1);
+    }
+}
