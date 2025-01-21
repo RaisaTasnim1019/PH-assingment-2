@@ -329,6 +329,7 @@ nav{
     }
     .small-cards{
         gap: .8rem;
+        justify-content: center;
     }
     .small{
         width: 13rem;
