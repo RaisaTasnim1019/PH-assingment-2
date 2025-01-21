@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,8 +8,8 @@ body{
 }
 /* Shared Styles*/
 .font-family {
-    font-family: "Fira Sans", serif;
-  }
+    font-family: "Quicksand", serif;
+}
 .text-primary-color-yellow{
     color: rgb(254, 163, 1);
 }
@@ -43,6 +43,9 @@ body{
 .bg-black{
     background-color: rgb(17, 17, 17);
 }
+.bg-white{
+    background-color: rgb(247, 247, 247);
+}
 .display-flex{
     display: flex;
 }
@@ -54,7 +57,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
-    width: 90%;
+    width: 87%;
     margin: 0 auto;
 }
 .nav-logo{
@@ -65,8 +68,9 @@ nav{
     width: 100%;
 }
 #nav-tittle{
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 700;
+    line-height: 30px;
 }
 .nav-links{
     gap: 30px;
@@ -77,15 +81,46 @@ nav{
 .nav-links li a{
     text-decoration: none;
     font-size: 20px;
+    font-weight: 700;
 }
 .nav-btn{
     border: none;
     border-radius: 12px;
     font-size: 18px;
+    font-weight: 600;
     width: 183px;
     height: 46px;
 }
-
+.banner{
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    width: 87%;
+    margin: 0 auto;
+}
+.banner-box-1{
+    flex-direction: column;
+}
+.banner-box-1 h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-bottom: 24px;
+}
+.banner-box-1 p{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 24px;
+}
+.banner-box-1 button{
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    width: 12rem;
+    height: 3rem;
+}
+.banner-box-2 img{
+    width: 100%;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
     #nav-tittle,
@@ -96,7 +131,14 @@ nav{
     .nav-btn-img{
         display: block;
     }
-    header{
+    .navigation{
         border-bottom: 2px solid rgb(254, 163, 1);
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-box-1{
+        align-items: center;
+        text-align: center;
     }
 }
