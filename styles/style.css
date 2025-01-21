@@ -235,7 +235,7 @@ nav{
 }
 .small-cards{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     gap: 1.25rem;
 }
 .small{
@@ -327,13 +327,16 @@ nav{
         align-items: center;
         text-align: center;
     }
+    .small-cards{
+        gap: .8rem;
+    }
     .small{
-        width: 9rem;
-        height: 11.2rem;
+        width: 13rem;
+        height: 15rem;
     }
     .small button{
-        width: 4em;
-        height: 1.4rem;
+        width: 10em;
+        height: 2.4rem;
     }
 
 }
