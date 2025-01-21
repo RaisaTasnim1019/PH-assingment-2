@@ -239,8 +239,8 @@ nav{
     gap: 1.25rem;
 }
 .small{
-    width: 18rem;
-    height: 19rem;
+    width: 15rem;
+    height: 18.8rem;
     border-radius: 16px;
 }
 .small h3{
@@ -328,12 +328,12 @@ nav{
         text-align: center;
     }
     .small{
-        width: 15rem;
-        height: 17rem;
+        width: 9rem;
+        height: 11.2rem;
     }
     .small button{
-        width: 10rem;
-        height: 2rem;
+        width: 4em;
+        height: 1.4rem;
     }
 
 }
