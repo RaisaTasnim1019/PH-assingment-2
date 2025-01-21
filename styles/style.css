@@ -64,7 +64,8 @@ body{
 nav,
 .banner,
 .curriculum,
-.stories-card{
+.stories-card,
+.footer-section{
     padding: 16px 0;
     width: 87%;
     margin: 0 auto;
@@ -209,7 +210,8 @@ nav{
     border-radius: 16px 16px 0px 0px;
     width: 100%;
 }
-.large-card h3,p{
+.large-card h3,
+.large-card p{
     padding: 38px;
 }
 .large-card h3{
@@ -261,6 +263,44 @@ nav{
     padding: 3.75rem 0;
     justify-content: space-around;
 }
+/* footer */
+.footer-section{
+    padding: 7.7rem 0;
+    justify-content: space-between;
+}
+.footer-1{
+    width: 24.9rem;
+    flex-direction: column;
+    gap: 2.1rem;
+}
+.footer-1-logo{
+    gap: 1.25rem;
+}
+.footer-1-logo h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.footer-2 h3,
+.footer-3 h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+.footer-links{
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.footer-links li{
+    list-style: none;
+}
+.footer-links a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.footer-icon{
+    gap: .634rem;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
     #nav-tittle,
@@ -279,7 +319,8 @@ nav{
     .banner{
         flex-direction: column-reverse;
     }
-    .curriculum{
+    .curriculum,
+    .footer-section{
         flex-direction: column;
     }
     .banner-box-1{
