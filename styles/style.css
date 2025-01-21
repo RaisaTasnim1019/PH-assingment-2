@@ -125,8 +125,7 @@ nav{
 }
 /* Standard Curriculum  */
 .card-section{
-    background-image: url("assets/bg.png");
-    background-size: cover;
+    background-image: url("../assets/bg.png");
 }
 .card-tittle{
     text-align: center;
@@ -169,11 +168,30 @@ nav{
 .curriculum-card a{
     text-decoration: none;
 }
+/* mid icon */
+.arrows{
+    justify-content: center;
+    gap: 10px;
+}
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 80px 0;
+}
+.circle h4{
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
     #nav-tittle,
     .nav-links,
-    .nav-btn{
+    .nav-btn,
+    .arrows{
         display: none;
     }
     .nav-btn-img{
