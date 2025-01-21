@@ -37,14 +37,23 @@ body{
 .bg-primary-color-blue{
     background-color: rgb(1, 172, 253);
 }
+.bg-secondary-color-blue{
+    background-color: rgb(5, 212, 223);
+}
 .bg-secondary-color-green{
-    color:rgb(149, 178, 38);
+    background-color:rgb(149, 178, 38);
+}
+.bg-secondary-color-purple{
+    background-color:rgb(93, 88, 239);
 }
 .bg-black{
     background-color: rgb(17, 17, 17);
 }
 .bg-white{
     background-color: rgb(247, 247, 247);
+}
+.bg-white-2{
+    background-color: rgb(255, 255, 255);
 }
 .display-flex{
     display: flex;
@@ -113,7 +122,7 @@ nav{
     font-weight: 500;
     padding-bottom: 24px;
 }
-.banner-box-1 button{
+.primary-btn{
     font-size: 1rem;
     font-weight: 700;
     border-radius: 12px;
@@ -125,7 +134,7 @@ nav{
 }
 /* Standard Curriculum  */
 .card-section{
-    background-image: url("../assets/bg.png");
+    background-image: url("../assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
 }
 .card-tittle{
     text-align: center;
@@ -186,12 +195,79 @@ nav{
     font-weight: 900;
     text-align: center;
 }
+/*  */
+.stories-card{
+    gap: 20px;
+}
+.large-card{
+    width: 540.27px;
+    height: 630.52px;
+    border-radius: 16px;
+}
+.large-card img,
+.small img{
+    border-radius: 16px 16px 0px 0px;
+    width: 100%;
+}
+.large-card h3,p{
+    padding: 38px;
+}
+.large-card h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.large-card p{
+    font-size: 15.34px;
+    font-weight: 500;
+}
+.large-card button{
+    width: 11rem;
+    height: 3rem;
+    border: none;
+    border-radius: 3rem;
+    position: relative;
+    left: 36px;
+    bottom: 26px;
+    font-size: 15.34px;
+    font-weight: 500;
+}
+.small-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+.small{
+    width: 18rem;
+    height: 19rem;
+    border-radius: 16px;
+}
+.small h3{
+    font-size: .9rem;
+    font-weight: 700;
+    padding-left: 2.3rem;
+}
+.small button{
+    width: 11rem;
+    height: 2.4rem;
+    border: none;
+    border-radius: 3rem;
+    position: relative;
+    left: 2.23rem;
+    bottom: 1.6rem;
+    font-size: .8rem;
+    font-weight: 500;
+}
+.mid-btn{
+    padding: 3.75rem 0;
+    justify-content: space-around;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
     #nav-tittle,
     .nav-links,
     .nav-btn,
-    .arrows{
+    .arrows,
+    .large-card{
         display: none;
     }
     .nav-btn-img{
@@ -210,4 +286,13 @@ nav{
         align-items: center;
         text-align: center;
     }
+    .small{
+        width: 15rem;
+        height: 17rem;
+    }
+    .small button{
+        width: 10rem;
+        height: 2rem;
+    }
+
 }
